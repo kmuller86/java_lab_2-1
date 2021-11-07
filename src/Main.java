@@ -1,6 +1,6 @@
 import java.util.Scanner;
-public class Main {
 
+public class Main {
 
     public static void main(String[] args) {
 
@@ -12,31 +12,30 @@ public class Main {
 
 
         int i = 100;
-        for (; i > 0; )
-        {
+        for (; i > 0; ) {
             if (i % 7 == 0)
                 System.out.print(i + " ");
             i--;
         }
-            /* zad.2 Napisz program który będzie uzupełniał tablicę 5-cio elementową int[] liczbami
-             * wprowadzanymi z klawiatury (użyć klasy Scanner), a następnie będzie wyświetlał elementy tablicy
-             * za pomocą pętli forEach powiększone o 11 */
+        /* zad.2 Napisz program który będzie uzupełniał tablicę 5-cio elementową int[] liczbami
+         * wprowadzanymi z klawiatury (użyć klasy Scanner), a następnie będzie wyświetlał elementy tablicy
+         * za pomocą pętli forEach powiększone o 11 */
 
-            Scanner scan = new Scanner(System.in);
+        Scanner scan = new Scanner(System.in);
 
-            int tab[] = new int[5];
+        int tab[] = new int[5];
 
-            System.out.println("Podaj liczby do tabeli");
-            tab[0] = scan.nextInt();
-            tab[1] = scan.nextInt();
-            tab[2] = scan.nextInt();
-            tab[3] = scan.nextInt();
-            tab[4] = scan.nextInt();
+//        }
+        System.out.println("Podaj liczby do tabeli");
+        tab[0] = scan.nextInt();
+        tab[1] = scan.nextInt();
+        tab[2] = scan.nextInt();
+        tab[3] = scan.nextInt();
+        tab[4] = scan.nextInt();
 
-            for (int j = 0; j < tab.length; j++)
-            {
-                System.out.print(tab[j] + " ");
-            }
+        for (int j = 0; j < tab.length; j++) {
+            System.out.print(tab[j] + " ");
+        }
 
     }
 }
