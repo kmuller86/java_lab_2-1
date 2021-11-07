@@ -35,11 +35,28 @@ public class Main {
 
         int k = 0;
 
-        while (k < tab1.length) {
+        while (k < tab2.length) {
             System.out.println(tab2[k++] + " ");
         }
 
-        //zad3
+        String[] tab3 = new String[5];
+        tab3[0] = "ania";
+        tab3[1] = "ma";
+        tab3[2] = "bardzo";
+        tab3[3] = "ładnego";
+        tab3[4] = "kota";
+
+        int l = tab3.length;
+
+        while(l > 0 )
+        {
+            System.out.println(tab3[--l] + " ");
+        }
+
+        while(true){
+            System.out.println(" ");
+        }
+
 
     }
 
