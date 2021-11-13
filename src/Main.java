@@ -3,6 +3,28 @@ import java.util.List;
 
 public class Main {
 
+    public static void Imie(String imie)
+    {
+        System.out.println(imie);
+    }
+    public static void Imie_Nazwisko(String imie, String nazwisko)
+    {
+        System.out.println(imie + nazwisko );
+    }
+    public static void Imie_Nazwisko_Wiek(String imie, String Nazwisko, int wiek)
+    {
+        System.out.println(imie + Nazwisko + wiek);
+    }
+    public static int Suma_2(int a, int b)
+    {
+       return a + b;
+    }
+    public static int Suma_3(int a, int b, int c)
+    {
+        return a + b + c;
+    }
+
+
     public static void main(String[] args) {
         /* ćwiczenie 5 Metody */
 
@@ -12,6 +34,7 @@ public class Main {
         c) napisać metodę, która wypisze otrzymane wartości,
         d) wstawić wywołanie metody do metody main
         */
+
 
         /* zad.2
         a) stworzyc tablicę typu String[6],
@@ -28,6 +51,9 @@ public class Main {
         c) napisać metodę o tej samej nazwie jak w punkcie a) i b) która przyjmuje wasze imie,
             nazwisko i wiek (int), a następnie wszystko wyświetli,
         */
+        Imie("Paulina");
+        Imie_Nazwisko("Paulina ", "Piotrowska");
+        Imie_Nazwisko_Wiek("Paulina ","Piotrowska ", 26);
 
         /* zad.4
         a) napisać metodę która przyjmuje 2 parametry typu int i zwraca ich sumę, którą przypiszemy do zmiennej,
@@ -36,6 +62,11 @@ public class Main {
             którą przypiszemy do zmiennej, coś takiego:     zmiennaB = metoda(7, 8, 9); <-- wywołanie metody
         c) wyświetlić sumę wywołań obu metod ---> print("wynik: " + (metoda(8, 9) + metoda(2, 3, 4));
         */
+        int zmiennaA = Suma_2(2,3);
+        System.out.println("zmiennaA = " + zmiennaA);
+        int zmiennaB = Suma_3(3,4,5);
+        System.out.println("zmiennaB = " + zmiennaB);
+        System.out.println("wynik = " + (Suma_2(2,3) + Suma_3(3,4,5)));
 
 
     }
