@@ -52,7 +52,7 @@ public class Main {
             nazwisko i wiek (int), a następnie wszystko wyświetli,
         */
         Imie("Paulina");
-        Imie_Nazwisko("Paulina ", "Piotrowska");
+        Imie_Nazwisko("Paulina  ", "Piotrowska");
         Imie_Nazwisko_Wiek("Paulina ","Piotrowska ", 26);
 
         /* zad.4
