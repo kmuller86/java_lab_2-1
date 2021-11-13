@@ -18,6 +18,49 @@ public class Main {
                 d) następnie proszę wykonać odwrotne sortowanie i znów użyć metody z punktu b) do wyświetlenia
                 elementów listy
           */
+        ArrayList<String> Animals = new ArrayList<>();
+        Animals.add("słoń");
+        Animals.add("pies");
+        Animals.add("żółw");
+        Animals.add("kot");
+        Animals.add("lis");
+
+        for (String a : Animals)
+        {
+            System.out.print(a + ", ");
+        }
+
+        Animals.remove(4);
+        Animals.remove(3);
+
+        System.out.println();
+
+        Animals.add("chomik");
+        Animals.add("wróbel");
+        Animals.add("antylopa");
+
+        for (String a : Animals)
+        {
+            System.out.print(a + ", ");
+        }
+        System.out.println();
+
+        System.out.println("Wielkość listy " + Animals.size());
+
+        Collections.sort(Animals, Collections.reverseOrder());
+
+        System.out.println();
+
+        for (String a : Animals)
+        {
+            System.out.print(a + ", ");
+        }
+        System.out.println();
+
+
+
+
+
 
 
          /* zad.2 Napisać program który stworzy Set<Integer> i wprowadzamy 10 liczb z klawiatury
