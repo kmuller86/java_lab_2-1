@@ -1,8 +1,11 @@
 import java.math.BigDecimal;
 import java.math.BigInteger;
 import java.util.*;
+import java.util.Scanner;
 
 public class Main {
+
+
 
     public static void main(String[] args) {
 
@@ -67,6 +70,29 @@ public class Main {
                 niech liczby się powtarzają, proszę posortować a następnie wyświetlić zawartość set-a w konsoli
                  a następnie przeiterować i wyświetlić forEach-em (jak wyżej)
          */
+
+        Set<Integer> Liczby = new HashSet<>();
+
+        Scanner scan = new Scanner(System.in);
+
+        System.out.println("Podaj 10 liczb");
+
+        for(int i = 0; i<10; i++)
+        {
+            int imput = scan.nextInt();
+            Liczby.add(imput);
+        }
+
+
+        for (int b : Liczby)
+        {
+            System.out.print(b + ", ");
+        }
+        System.out.println();
+
+
+
+
 
     }
 
