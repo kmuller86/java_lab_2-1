@@ -22,11 +22,14 @@ public class Main {
                 elementów listy
           */
         ArrayList<String> Animals = new ArrayList<>();
-        Animals.add("słoń");
-        Animals.add("pies");
-        Animals.add("żółw");
-        Animals.add("kot");
-        Animals.add("lis");
+        Scanner scan = new Scanner(System.in);
+        System.out.println("Podaj 5 zwierząt");
+        for(int i = 0; i<5; i++)
+        {
+            String imput1 = scan.next();
+            Animals.add(imput1);
+        }
+
 
         for (String a : Animals)
         {
@@ -73,14 +76,14 @@ public class Main {
 
         Set<Integer> Liczby = new HashSet<>();
 
-        Scanner scan = new Scanner(System.in);
+        Scanner scan2 = new Scanner(System.in);
 
         System.out.println("Podaj 10 liczb");
 
         for(int i = 0; i<10; i++)
         {
-            int imput = scan.nextInt();
-            Liczby.add(imput);
+            int imput2 = scan.nextInt();
+            Liczby.add(imput2);
         }
 
 
