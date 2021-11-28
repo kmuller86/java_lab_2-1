@@ -36,6 +36,7 @@ public class Main {
         */
 
 
+
         /* zad.2
         a) stworzyc tablicę typu String[6],
         b) napisać metodę która uzupełni tablicę wartościami podawanymi z klawiatury
