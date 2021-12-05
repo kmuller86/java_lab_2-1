@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Scanner;
 
 public class Main {
 
@@ -24,6 +25,47 @@ public class Main {
         return a + b + c;
     }
 
+    public static void uzupelnij_tablice(int[] tab1)
+    {
+        for(int i = 0; i <= 20; i++ )
+        {
+            tab1[i] = 40 - i;
+        }
+    }
+    public static void wypisz_tablice(int[] tab2)
+    {
+        for(int a: tab2 )
+        {
+            System.out.println(a);
+        }
+    }
+     /* zad.2
+        a) stworzyc tablicę typu String[6],
+        b) napisać metodę która uzupełni tablicę wartościami podawanymi z klawiatury
+            (użyć do tego pętli i klasy Scanner),
+        c) napisać metodę która wyświetli elementy tablicy od ostatniego elementu do elementu o indeksie 0,
+        */
+
+    public static void uzupelnij_tablice2(String[] tab)
+    {
+
+        Scanner scan = new Scanner(System.in);
+        for(int i =0; i<6; i++)
+        {
+            System.out.println("Napisz następne słowo");
+            tab[i] = scan.next();
+        }
+
+    }
+    public static void wypisz_tablice2 (String[] tab)
+    {
+        for(String a : tab)
+        {
+            System.out.println(a);
+        }
+    }
+
+
 
     public static void main(String[] args) {
         /* ćwiczenie 5 Metody */
@@ -34,6 +76,9 @@ public class Main {
         c) napisać metodę, która wypisze otrzymane wartości,
         d) wstawić wywołanie metody do metody main
         */
+        int[] tab1 = new int[21];
+        uzupelnij_tablice(tab1);
+        wypisz_tablice(tab1);
 
 
 
@@ -43,6 +88,11 @@ public class Main {
             (użyć do tego pętli i klasy Scanner),
         c) napisać metodę która wyświetli elementy tablicy od ostatniego elementu do elementu o indeksie 0,
         */
+        String[] string_tab = new String[6];
+        uzupelnij_tablice2(string_tab);
+        wypisz_tablice2(string_tab);
+
+
 
         /* zad.3
         a) napisać metodę która przyjmuje 1 parametr typu String, metoda nic nie zwraca, tylko
