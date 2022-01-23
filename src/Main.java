@@ -21,6 +21,7 @@ public class Main {
                 d) następnie proszę wykonać odwrotne sortowanie i znów użyć metody z punktu b) do wyświetlenia
                 elementów listy
           */
+        /* Hmmm takie rozwiązanie widziałem w kilku pracach już ... */
         ArrayList<String> Animals = new ArrayList<>();
         Scanner scan = new Scanner(System.in);
         System.out.println("Podaj 5 zwierząt");
